@@ -1,0 +1,14 @@
+/home/faysal-hossain/Desktop/MyDotnetApp/bin/Debug/net8.0/MyDotnetApp
+/home/faysal-hossain/Desktop/MyDotnetApp/bin/Debug/net8.0/MyDotnetApp.deps.json
+/home/faysal-hossain/Desktop/MyDotnetApp/bin/Debug/net8.0/MyDotnetApp.runtimeconfig.json
+/home/faysal-hossain/Desktop/MyDotnetApp/bin/Debug/net8.0/MyDotnetApp.dll
+/home/faysal-hossain/Desktop/MyDotnetApp/bin/Debug/net8.0/MyDotnetApp.pdb
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.AssemblyInfoInputs.cache
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.AssemblyInfo.cs
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.csproj.CoreCompileInputs.cache
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.dll
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/refint/MyDotnetApp.dll
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.pdb
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.genruntimeconfig.cache
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/ref/MyDotnetApp.dll
