@@ -12,3 +12,4 @@
 /home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.pdb
 /home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.genruntimeconfig.cache
 /home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/ref/MyDotnetApp.dll
+/home/faysal-hossain/Desktop/MyDotnetApp/obj/Debug/net8.0/MyDotnetApp.sourcelink.json
