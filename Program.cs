@@ -1,5 +1,5 @@
-﻿using System;
-using System.Dynamic;
+﻿// using System;
+// using System.Dynamic;
 
 // class Program
 // {
@@ -91,32 +91,196 @@ using System.Dynamic;
 
 
 
-public class Student 
+// public class Student 
+// {
+//     // property
+//     public int Id {get; set;}
+//     public string Name {get; set;}
+//     public string Course {get; set;}
+
+
+//     // mothod
+//     public void DisplayInfo()
+//     {
+//         Console.WriteLine($"Id: {Id}, Name: {Name}, Course: {Course}");
+//     }
+// }
+
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         // new object creation
+//         Student student1 = new Student();
+//         student1.Id = 101;
+//         student1.Name = "Faysal Hossain";
+//         student1.Course = "Learn .Net Backend";
+
+//         student1.DisplayInfo();
+//     }
+// }
+
+
+
+
+// using System;
+
+// public class Product
+// {
+//     public int Id {get; set;}
+//     public string Name { get; set;}
+//     public double Price { get; set;}
+
+
+//     public Product (int id, string name, double price)
+//     {
+//         Id = id;
+//         Name = name;
+//         Price = price;
+//     }
+
+//     public void ShowDetails()
+//     {
+//         Console.WriteLine($"Product: {Id}, Name: {Name}, Price: {Price}");
+//     } 
+// }
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         Product myProduct = new Product(1, "Laptop", 4545234 );
+//         myProduct.ShowDetails();
+//     }
+// }
+
+
+
+// using System;
+// using System.Collections.Generic;
+// using System.Linq;
+
+// public class TaskItem
+// {
+//     public int Id { get; set; }
+//     public string Title { get; set; }
+//     public bool IsCompleted { get; set; }
+
+
+//     public TaskItem(int id, string title, bool isCompleted)
+//     {
+//         Id = id;
+//         Title = title;
+//         IsCompleted = isCompleted;
+//     }
+
+//     public void PrintTaskDetails()
+//     {
+//         Console.WriteLine($"ID: {Id}, Title: {Title}, Status: {IsCompleted}");
+//     }
+// }
+
+
+// class Program
+// {
+//     static void Main()
+//     {
+
+//         List<TaskItem> taskList = new List<TaskItem>();
+
+//         taskList.Add(new TaskItem(1, "my first task list 1", true));
+//         taskList.Add(new TaskItem(2, "my secound task 2", false));
+//         taskList.Add(new TaskItem(3, "my third task 3 ", true));
+
+//         // TaskItem myTask = new TaskItem(1, "Learn .Net Program For my new job", true);
+
+//         var completedTask = taskList.Where((t) => t.IsCompleted == false).ToList();
+
+//         foreach(var task in completedTask)
+//         {
+//             task.PrintTaskDetails();
+//         }
+
+
+//         var singleTask = taskList.FirstOrDefault((t) => t.Id == 3);
+//         if(singleTask != null)
+//         {
+//             Console.WriteLine($"\nFound task with ID 2: {singleTask.Title}");
+//         } 
+//     }
+// }
+
+
+
+
+// using System;
+
+// public class BaseTask
+// {
+//     public int Id {get; set;}
+//     public string Title {get; set;}
+
+
+//     public BaseTask (int id, string title) {
+//         Id = id;
+//         Title = title;
+//     }
+// }
+
+// public class WorkTask : BaseTask
+// {
+//     public string ProjectName {get; set;}
+
+//     public WorkTask (int id, string title, string projectName) : base(id, title)
+//     {
+//         ProjectName = projectName;
+//     }
+
+//     public void ShowTaskInfo()
+//     {
+//         Console.WriteLine($"Id: {Id}, Title: {Title}, Project Name: {ProjectName}");
+//     }
+
+// }
+
+
+// public interface ITaskRepository
+// {
+//     public void SaveTask(string taskName);
+
+// }
+// public class databaseTaskRepository : ITaskRepository
+// {
+//     public void SaveTask(string taskName)
+//     {
+//         Console.WriteLine($"Saving {taskName} to PostgreSQL database..");
+//     }
+// } 
+
+
+
+using System;
+
+public interface ITaskService
 {
-    // property
-    public int Id {get; set;}
-    public string Name {get; set;}
-    public string Course {get; set;}
-
-
-    // mothod
-    public void DisplayInfo()
-    {
-        Console.WriteLine($"Id: {Id}, Name: {Name}, Course: {Course}");
-    }
+    public void CompleteTask(int id);
 }
 
+public class TaskService : ITaskService
+{
+    public void CompleteTask(int id)
+    {
+        Console.WriteLine($"task with Id {id} is marked as completed");
+    }
+}
 
 class Program
 {
     static void Main()
     {
-        // new object creation
-        Student student1 = new Student();
-        student1.Id = 101;
-        student1.Name = "Faysal Hossain";
-        student1.Course = "Learn .Net Backend";
-
-        student1.DisplayInfo();
+        TaskService taskService = new TaskService();
+        taskService.CompleteTask(44);
     }
 }
+
